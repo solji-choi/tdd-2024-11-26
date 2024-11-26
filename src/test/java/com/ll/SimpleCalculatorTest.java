@@ -3,6 +3,7 @@ package com.ll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
@@ -41,5 +42,14 @@ public class SimpleCalculatorTest {
         int rs = simpleCalculator.multiply(5, 7);
 
         assertEquals(35, rs);
+    }
+
+    @Test
+    @DisplayName("3 * 9 = 27")
+    public void multiply3 () { //이런 메소드 하나하나를 테스트 케이스라고 한다
+        SimpleCalculator simpleCalculator = new SimpleCalculator();
+        int rs = simpleCalculator.multiply(3, 9);
+
+        assertThat(rs).isEqualTo(27);
     }
 }
