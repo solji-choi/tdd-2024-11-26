@@ -10,10 +10,6 @@ public class SimpleCalculator {
     }
 
     public int minus(int num1, int num2) {
-        if(num1 == 10 && num2 == 5) {
-            return 5;
-        }
-
-        return 3;
+        return num1 - num2;
     }
 }
