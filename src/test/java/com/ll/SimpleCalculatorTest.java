@@ -52,4 +52,13 @@ public class SimpleCalculatorTest {
 
         assertThat(rs).isEqualTo(27);
     }
+
+    @Test
+    @DisplayName("5 - 2 = 3")
+    public void minus1 () { //이런 메소드 하나하나를 테스트 케이스라고 한다
+        SimpleCalculator simpleCalculator = new SimpleCalculator();
+        int rs = simpleCalculator.minus(5, 2);
+
+        assertThat(rs).isEqualTo(3);
+    }
 }
