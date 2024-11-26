@@ -6,12 +6,6 @@ public class SimpleCalculator {
     }
 
     public int multiply(int num1, int num2) {
-        if(num1 == 5 && num2 == 7){
-            return 35;
-        } else if(num1 == 3 && num2 == 9) {
-            return 27;
-        }
-
-        return 20;
+        return num1 * num2;
     }
 }
