@@ -33,4 +33,13 @@ public class SimpleCalculatorTest {
 
         assertEquals(20, rs);
     }
+
+    @Test
+    @DisplayName("5 * 7 = 35")
+    public void multiply2 () { //이런 메소드 하나하나를 테스트 케이스라고 한다
+        SimpleCalculator simpleCalculator = new SimpleCalculator();
+        int rs = simpleCalculator.multiply(5, 7);
+
+        assertEquals(35, rs);
+    }
 }
